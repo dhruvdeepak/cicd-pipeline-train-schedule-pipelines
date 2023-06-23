@@ -7,7 +7,6 @@ pipeline {
         node { distBaseUrl = 'https://direct.nodejs.org/dist/' }
         sh './gradlew build --no-daemon'
         archiveArtifacts artifacts: 'dist/trainSchedule.zip'
-        
       }
     }
   }
